@@ -1,0 +1,8 @@
+"https://github.com/jistr/vim-nerdtree-tabs.git
+
+let NERDTreeMinimalUI=1
+let NERDTreeWinSize=32
+let g:nerdtree_tabs_open_on_console_startup=1
+nmap <Leader>tv <plug>NERDTreeTabsToggle<CR>
+
+let g:color_settings += ['hi Directory guifg=#FF0000 ctermfg=118']

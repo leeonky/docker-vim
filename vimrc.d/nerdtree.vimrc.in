@@ -1,0 +1,10 @@
+"https://github.com/scrooloose/nerdtree.git
+
+autocmd vimenter * NERDTree
+let NERDTreeWinSize=32
+let NERDTreeAutoDeleteBuffer=1
+let NERDTreeMinimalUI=1
+nmap <leader>tv :NERDTreeToggle<cr>
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+let g:color_settings += ['hi Directory guifg=#FF0000 ctermfg=118']

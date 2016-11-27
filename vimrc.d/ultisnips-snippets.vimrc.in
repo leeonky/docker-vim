@@ -1,0 +1,3 @@
+"https://github.com/leeonky/ultisnips-snippets.git
+
+let g:UltiSnipsSnippetDirectories = [$HOME.'/.vim/bundle/ultisnips-snippets']

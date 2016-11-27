@@ -1,0 +1,11 @@
+"https://github.com/dyng/ctrlsf.vim.git
+
+set incsearch
+
+" high line matched searched text
+set hlsearch
+
+" close high line matched text
+nnoremap <TAB> :nohl<cr>
+nmap <leader>fc <Plug>CtrlSFCwordPath
+nmap <leader>fo :CtrlSFOpen<cr>

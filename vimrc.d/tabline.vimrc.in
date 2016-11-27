@@ -1,0 +1,5 @@
+"https://github.com/mkitt/tabline.vim.git
+
+let g:color_settings += ['hi TabLine      ctermfg=119  ctermbg=235     cterm=NONE']
+let g:color_settings += ['hi TabLineFill  ctermfg=Gray  ctermbg=Black     cterm=NONE']
+let g:color_settings += ['hi TabLineSel   ctermfg=20  ctermbg=118  cterm=NONE']

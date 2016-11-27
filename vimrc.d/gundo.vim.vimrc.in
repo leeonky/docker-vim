@@ -1,0 +1,3 @@
+"https://github.com/sjl/gundo.vim.git
+
+nnoremap <leader>u :GundoToggle<cr>
