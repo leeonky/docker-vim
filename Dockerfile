@@ -10,7 +10,6 @@ RUN yum -y install vim-common vim-enhanced vim-filesystem
 
 ###### VIM plugins
 USER $USER_NAME
-RUN cd ~/ && (ls -A | xargs rm -rf)
 ADD vimrc $USER_HOME/.vimrc
 ADD vimrc.d $USER_HOME/.vimrc.d
 RUN sudo yum -y install git && \
