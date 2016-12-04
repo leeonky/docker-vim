@@ -3,10 +3,29 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 """""""""""""""""""""""""""""""""""""""""""""""""""
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""" configs
 let mapleader=","
 let g:color_settings = []
-"""""""""""""""""""""""""""""""""""""""""""""""""""
+
+filetype on
+
+filetype plugin on
+
+set nocompatible
+
+set cursorline
+
+set number
+
+syntax enable
+
+syntax on
+
+filetype indent on
+
+set tabstop=8
+set shiftwidth=8
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""" reset all color settings
 function Reset_color_settings()
