@@ -3,7 +3,7 @@ install_plugin() {
 	cd ~/.vim/bundle
 	local url=$(grep '^"' $file | head -n 1 | sed 's/^"//g')
 	if [ "$url" != "" ]; then
-		git clone $url && sudo mv $file ${file%.in}
+		git clone $url && mv $file ${file%.in}
 	fi
 }
 

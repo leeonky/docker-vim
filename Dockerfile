@@ -8,9 +8,12 @@ RUN yum -y install docker
 ###### install vim extended
 RUN yum -y install vim-common vim-enhanced vim-filesystem
 
-###### tools for install plugin
-ADD vimrc $USER_HOME/.vimrc
-ADD vimrc.d $USER_HOME/.vimrc.d
-RUN yum -y install git && \
-	/bin/bash --login $USER_HOME/.vimrc.d/vim_install.sh && \
-	sudo rm -f $USER_HOME/.vimrc.d/vim_install.sh
+###### VIM plugins
+USER $USER_NAME
+ADD vimrc $DEV_HOME/.vimrc
+ADD vimrc.d $DEV_HOME/.vimrc.d
+RUN sudo yum -y install git && \
+	chown $USER_NAME:$USER_NAME $DEV_HOME/.vimrc && \
+	chown $USER_NAME:$USER_NAME $DEV_HOME/.vimrc.d -R && \
+	/bin/bash --login $DEV_HOME/.vimrc.d/vim_install.sh && \
+	rm -f $DEV_HOME/.vimrc.d/vim_install.sh
