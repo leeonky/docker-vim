@@ -13,7 +13,7 @@ USER $USER_NAME
 ADD vimrc $DEV_HOME/.vimrc
 ADD vimrc.d $DEV_HOME/.vimrc.d
 RUN sudo yum -y install git && \
-	chown $USER_NAME:$USER_NAME $DEV_HOME/.vimrc && \
-	chown $USER_NAME:$USER_NAME $DEV_HOME/.vimrc.d -R && \
+	sudo chown $USER_NAME:$USER_NAME $DEV_HOME/.vimrc && \
+	sudo chown $USER_NAME:$USER_NAME $DEV_HOME/.vimrc.d -R && \
 	/bin/bash --login $DEV_HOME/.vimrc.d/vim_install.sh && \
 	rm -f $DEV_HOME/.vimrc.d/vim_install.sh
