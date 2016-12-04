@@ -18,5 +18,4 @@ install_plugins() {
 	rm ~/.vim/bundle/*/.git* -rf
 }
 
-
 install_plugins
