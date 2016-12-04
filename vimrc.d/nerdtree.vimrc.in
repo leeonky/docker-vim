@@ -7,4 +7,4 @@ let NERDTreeMinimalUI=1
 nmap <leader>tv :NERDTreeToggle<cr>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-hi Directory guifg=#FF0000 ctermfg=118
+let g:color_settings += ['hi Directory guifg=#FF0000 ctermfg=118']
