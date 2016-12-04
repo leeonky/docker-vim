@@ -33,9 +33,6 @@ function Reset_color_settings()
 		exe color
 	endfor
 endfunction
-
-function g:AddColor(name, fg, bg, tm)
-endfunction
 """""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""" source plugins
@@ -53,5 +50,5 @@ function Source_session()
 endfunction
 """""""""""""""""""""""""""""""""""""""""""""""""""
 
-call Source_session()
 call Reset_color_settings()
+call Source_session()
