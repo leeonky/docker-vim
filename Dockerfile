@@ -1,4 +1,4 @@
-FROM daocloud.io/leeonky/centos-7:master-e53408a
+FROM daocloud.io/leeonky/centos-7:master-88b505c
 
 USER root
 
