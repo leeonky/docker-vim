@@ -2,9 +2,6 @@ FROM daocloud.io/leeonky/os-dev:master-22991dc
 
 USER root
 
-###### install docker client
-RUN install-docker
-
 ###### install vim extended
 RUN yum -y install vim-common vim-enhanced vim-filesystem
 
