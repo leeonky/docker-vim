@@ -25,6 +25,8 @@ filetype indent on
 
 set tabstop=8
 set shiftwidth=8
+
+colorscheme default
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""" reset all color settings
