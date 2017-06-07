@@ -1,9 +1,13 @@
 FROM daocloud.io/leeonky/os-dev:master-22991dc
 
-USER root
+USER $USER_NAME
 
 ###### install vim extended
-RUN yum -y install vim-common vim-enhanced vim-filesystem
+RUN sudo yum -y install vim-common vim-enhanced vim-filesystem
+
+###### markdown plugin
+RUN sudo yum -y install nodejs xdg-utils firefox wqy-microhei-fonts
+RUN sudo npm -g install instant-markdown-d
 
 ###### VIM plugins
 USER $USER_NAME

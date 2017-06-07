@@ -1,0 +1,3 @@
+"https://github.com/suan/vim-instant-markdown.git
+
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
