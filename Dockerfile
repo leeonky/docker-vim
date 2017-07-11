@@ -1,4 +1,4 @@
-FROM daocloud.io/leeonky/os-dev:master-22991dc
+FROM leeonky/os-dev
 
 USER $USER_NAME
 
