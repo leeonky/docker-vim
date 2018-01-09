@@ -1,13 +1,16 @@
-FROM leeonky/os-dev
+FROM leeonky/os-dev:ubuntu
 
 USER $USER_NAME
 
 ###### install vim extended
-RUN sudo yum -y install vim-common vim-enhanced vim-filesystem && sudo yum clean all
+RUN sudo apt-get -y install vim \
+	vim-common \
+	vim-nox && \
+	sudo apt-get clean
 
 ###### markdown plugin
-RUN sudo yum -y install nodejs xdg-utils firefox wqy-microhei-fonts && \
-	sudo yum clean all && \
+RUN sudo apt-get -y install nodejs npm xdg-utils firefox fonts-wqy-microhei && \
+	sudo apt-get clean && \
 	sudo npm -g install instant-markdown-d
 
 ###### VIM plugins
