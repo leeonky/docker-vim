@@ -17,6 +17,8 @@ set cursorline
 
 set number
 
+set hlsearch
+
 syntax enable
 
 syntax on
