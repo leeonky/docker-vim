@@ -3,9 +3,8 @@ FROM leeonky/os-dev:ubuntu
 USER $USER_NAME
 
 ###### install vim extended
-RUN sudo apt-get -y install vim \
-	vim-common \
-	vim-nox && \
+RUN sudo apt-get update && sudo apt-get install -y \
+	vim vim-common vim-nox && \
 	sudo apt-get clean
 
 ###### markdown plugin
