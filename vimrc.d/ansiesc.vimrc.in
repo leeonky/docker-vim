@@ -1,4 +1,4 @@
-"https://github.com/vim-scripts/AnsiEsc.vim.git
+"https://gitee.com/leeonky/AnsiEsc.vim.git
 let s:ansiesc_worded = 0
 
 function AnsiEse_on()

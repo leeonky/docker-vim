@@ -1,4 +1,4 @@
-"https://github.com/scrooloose/syntastic.git
+"https://gitee.com/leeonky/syntastic.git
 
 nnoremap <leader>nn :lnext<cr>
 nnoremap <leader>np :lprevious<cr>

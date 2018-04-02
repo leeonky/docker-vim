@@ -1,4 +1,4 @@
-"https://github.com/scrooloose/nerdtree.git
+"https://gitee.com/leeonky/nerdtree.git
 
 autocmd vimenter * NERDTree
 let NERDTreeWinSize=32

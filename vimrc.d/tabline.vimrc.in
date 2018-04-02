@@ -1,4 +1,4 @@
-"https://github.com/mkitt/tabline.vim.git
+"https://gitee.com/leeonky/tabline.vim.git
 
 let g:color_settings += ['hi TabLine      ctermfg=119  ctermbg=235     cterm=NONE']
 let g:color_settings += ['hi TabLineFill  ctermfg=Gray  ctermbg=Black     cterm=NONE']

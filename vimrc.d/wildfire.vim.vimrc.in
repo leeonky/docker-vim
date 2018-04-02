@@ -1,4 +1,4 @@
-"https://github.com/gcmt/wildfire.vim.git
+"https://gitee.com/leeonky/wildfire.vim.git
 
 map <SPACE> <Plug>(wildfire-fuel)
 vmap <S-SPACE> <Plug>(wildfire-water)
